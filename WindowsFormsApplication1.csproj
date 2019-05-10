@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{753DA89B-7A63-4103-98F1-D5A430CE500A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="vista\Ciclos\FormEstudiantes e Institucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Ciclos\FormEstudiantes e Institucion.Designer.cs">
+      <DependentUpon>FormEstudiantes e Institucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Ciclos\FormEstudiantes y Calificaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Ciclos\FormEstudiantes y Calificaciones.Designer.cs">
+      <DependentUpon>FormEstudiantes y Calificaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Ciclos\FormEstudiantesCarrera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Ciclos\FormEstudiantesCarrera.Designer.cs">
+      <DependentUpon>FormEstudiantesCarrera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Ciclos\FormNomEstudiantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Ciclos\FormNomEstudiantes.Designer.cs">
+      <DependentUpon>FormNomEstudiantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Condicionales\FormMeses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Condicionales\FormMeses.Designer.cs">
+      <DependentUpon>FormMeses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\FormaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\FormaMenu.Designer.cs">
+      <DependentUpon>FormaMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Arreglos\FormArreglos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Arreglos\FormArreglos.Designer.cs">
+      <DependentUpon>FormArreglos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Ciclos\FormCiclos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Ciclos\FormCiclos.Designer.cs">
+      <DependentUpon>FormCiclos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Condicionales\FormCondicionales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Condicionales\FormCondicionales.Designer.cs">
+      <DependentUpon>FormCondicionales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Funciones\FormCombinatorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Funciones\FormCombinatorios.Designer.cs">
+      <DependentUpon>FormCombinatorios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Secuenciales\FormDivisas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Secuenciales\FormDivisas.Designer.cs">
+      <DependentUpon>FormDivisas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Secuenciales\FormEcuacionC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Secuenciales\FormEcuacionC.Designer.cs">
+      <DependentUpon>FormEcuacionC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Condicionales\FormEcuacionCuadratica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Condicionales\FormEcuacionCuadratica.Designer.cs">
+      <DependentUpon>FormEcuacionCuadratica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Secuenciales\FormFCM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Secuenciales\FormFCM.Designer.cs">
+      <DependentUpon>FormFCM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Funciones\FormFunciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Funciones\FormFunciones.Designer.cs">
+      <DependentUpon>FormFunciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Secuenciales\FormGanancias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Secuenciales\FormGanancias.Designer.cs">
+      <DependentUpon>FormGanancias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Secuenciales\FormHipotenusa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Secuenciales\FormHipotenusa.Designer.cs">
+      <DependentUpon>FormHipotenusa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Secuenciales\FormIMC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Secuenciales\FormIMC.Designer.cs">
+      <DependentUpon>FormIMC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Ciclos\FormListaEstudiantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Ciclos\FormListaEstudiantes.Designer.cs">
+      <DependentUpon>FormListaEstudiantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Ciclos\FormListaNombres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Ciclos\FormListaNombres.Designer.cs">
+      <DependentUpon>FormListaNombres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Condicionales\FormLlantas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Condicionales\FormLlantas.Designer.cs">
+      <DependentUpon>FormLlantas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Arreglos\FormMediaAritmetica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Arreglos\FormMediaAritmetica.Designer.cs">
+      <DependentUpon>FormMediaAritmetica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Condicionales\FormNombreMayus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Condicionales\FormNombreMayus.Designer.cs">
+      <DependentUpon>FormNombreMayus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Arreglos\FormNombres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Arreglos\FormNombres.Designer.cs">
+      <DependentUpon>FormNombres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Funciones\FormNumeroAmigo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Funciones\FormNumeroAmigo.Designer.cs">
+      <DependentUpon>FormNumeroAmigo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Funciones\FormNumeroPerfecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Funciones\FormNumeroPerfecto.Designer.cs">
+      <DependentUpon>FormNumeroPerfecto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Arreglos\FormNum_May_Men.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Arreglos\FormNum_May_Men.Designer.cs">
+      <DependentUpon>FormNum_May_Men.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Funciones\FormParametros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Funciones\FormParametros.Designer.cs">
+      <DependentUpon>FormParametros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Secuenciales\FormPresupuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Secuenciales\FormPresupuesto.Designer.cs">
+      <DependentUpon>FormPresupuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Secuenciales\FormSalario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Secuenciales\FormSalario.Designer.cs">
+      <DependentUpon>FormSalario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Ciclos\FormSaludo10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Ciclos\FormSaludo10.Designer.cs">
+      <DependentUpon>FormSaludo10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Ciclos\FormSaludos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Ciclos\FormSaludos.Designer.cs">
+      <DependentUpon>FormSaludos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Ciclos\FormSaludoSI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Ciclos\FormSaludoSI.Designer.cs">
+      <DependentUpon>FormSaludoSI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Secuenciales\FormSecuenciales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Secuenciales\FormSecuenciales.Designer.cs">
+      <DependentUpon>FormSecuenciales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Secuenciales\FormVAbsoluto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Secuenciales\FormVAbsoluto.Designer.cs">
+      <DependentUpon>FormVAbsoluto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Condicionales\FormVocal o Consonate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Condicionales\FormVocal o Consonate.Designer.cs">
+      <DependentUpon>FormVocal o Consonate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Arreglos\FormVocalConsonante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Arreglos\FormVocalConsonante.Designer.cs">
+      <DependentUpon>FormVocalConsonante.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="vista\Ciclos\FormEstudiantes e Institucion.resx">
+      <DependentUpon>FormEstudiantes e Institucion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Ciclos\FormEstudiantes y Calificaciones.resx">
+      <DependentUpon>FormEstudiantes y Calificaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Ciclos\FormEstudiantesCarrera.resx">
+      <DependentUpon>FormEstudiantesCarrera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Ciclos\FormNomEstudiantes.resx">
+      <DependentUpon>FormNomEstudiantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Condicionales\FormMeses.resx">
+      <DependentUpon>FormMeses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\FormaMenu.resx">
+      <DependentUpon>FormaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Arreglos\FormArreglos.resx">
+      <DependentUpon>FormArreglos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Ciclos\FormCiclos.resx">
+      <DependentUpon>FormCiclos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Condicionales\FormCondicionales.resx">
+      <DependentUpon>FormCondicionales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Funciones\FormCombinatorios.resx">
+      <DependentUpon>FormCombinatorios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Secuenciales\FormDivisas.resx">
+      <DependentUpon>FormDivisas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Secuenciales\FormEcuacionC.resx">
+      <DependentUpon>FormEcuacionC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Condicionales\FormEcuacionCuadratica.resx">
+      <DependentUpon>FormEcuacionCuadratica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Secuenciales\FormFCM.resx">
+      <DependentUpon>FormFCM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Funciones\FormFunciones.resx">
+      <DependentUpon>FormFunciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Secuenciales\FormGanancias.resx">
+      <DependentUpon>FormGanancias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Secuenciales\FormHipotenusa.resx">
+      <DependentUpon>FormHipotenusa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Secuenciales\FormIMC.resx">
+      <DependentUpon>FormIMC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Ciclos\FormListaEstudiantes.resx">
+      <DependentUpon>FormListaEstudiantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Ciclos\FormListaNombres.resx">
+      <DependentUpon>FormListaNombres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Condicionales\FormLlantas.resx">
+      <DependentUpon>FormLlantas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Arreglos\FormMediaAritmetica.resx">
+      <DependentUpon>FormMediaAritmetica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Condicionales\FormNombreMayus.resx">
+      <DependentUpon>FormNombreMayus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Arreglos\FormNombres.resx">
+      <DependentUpon>FormNombres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Funciones\FormNumeroAmigo.resx">
+      <DependentUpon>FormNumeroAmigo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Funciones\FormNumeroPerfecto.resx">
+      <DependentUpon>FormNumeroPerfecto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Arreglos\FormNum_May_Men.resx">
+      <DependentUpon>FormNum_May_Men.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Funciones\FormParametros.resx">
+      <DependentUpon>FormParametros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Secuenciales\FormPresupuesto.resx">
+      <DependentUpon>FormPresupuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Secuenciales\FormSalario.resx">
+      <DependentUpon>FormSalario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Ciclos\FormSaludo10.resx">
+      <DependentUpon>FormSaludo10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Ciclos\FormSaludos.resx">
+      <DependentUpon>FormSaludos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Ciclos\FormSaludoSI.resx">
+      <DependentUpon>FormSaludoSI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Secuenciales\FormSecuenciales.resx">
+      <DependentUpon>FormSecuenciales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Secuenciales\FormVAbsoluto.resx">
+      <DependentUpon>FormVAbsoluto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Condicionales\FormVocal o Consonate.resx">
+      <DependentUpon>FormVocal o Consonate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Arreglos\FormVocalConsonante.resx">
+      <DependentUpon>FormVocalConsonante.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="modelo\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
